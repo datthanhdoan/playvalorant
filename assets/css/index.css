@@ -1,0 +1,171 @@
+@font-face {
+    font-family: Nueu;
+    src: url(../fonts/nueu.ttf);
+}
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Nueu,Arial,sans-serif;
+}
+:root{
+    --header-bg:rgb(17, 17, 17);
+    --dowload-bg:rgb(52, 52, 52);
+    --footer-bg:rgb(17, 17, 17);
+    --button-bg:rgb(255, 70, 85);
+}
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.main{
+    position: relative;
+}
+.header{
+    width: 100%;
+    height: 80px;
+    background-color: var(--header-bg);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header ul{
+    position: relative;
+}
+.riot-logo{
+    position: relative;
+    margin-left: 20px;
+    height: 80px;
+    min-width: 85px;
+    background: center no-repeat url(../images/riot-game-logo.png);
+    background-size: contain;
+}
+.arrow-down{
+    position: absolute;
+    background: no-repeat center url(../images/down-arrow.png);
+    top:37px;
+    right: -13px;
+    width: 13px;
+    height: 13px;
+    background-size: contain;
+}
+.valo-logo{
+    height: 75px;
+    min-width: 30px;
+    margin-left: 20px;
+    background: center no-repeat url(../images/valo-logo.png);
+    background-size: contain;
+}
+
+.nav{
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+}
+.nav li a{
+    width: inherit;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.search-and-play{
+    display: flex;
+    min-width: 202px;
+    height: 80px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.search-and-play .search{
+    width: 45px;
+    height: 44px;
+    background: center no-repeat url(../images/icons8-search-logo.png);
+    background-size: 27px 27px;
+    background-color: var(--dowload-bg);
+    border-radius: 16px;
+}
+
+.search-and-play .language{
+    background:center no-repeat url(../images/icons8-earth-logo.png);
+    width: 32px;
+    height: 32px;
+    background-size: 20px 20px;
+}
+.search-and-play .playnow{
+    background:linear-gradient(to right,#FF3844,#FF7261) ;
+    width: 113px;
+    height: 32px;
+    border-radius: 13px;
+    margin-right: 20px;
+    line-height: 32px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgb(17, 17, 17);
+}
+
+#pop-up-play{
+    position: absolute;
+    min-width: 66.7%;
+    min-height: 40vh;
+    background-color: rgb(15, 25, 35);
+    border-top: 1px solid #939393;
+    top:30vh;
+    left: 16.65vw;
+    padding: 20px 90px 20px 90px;
+}
+
+.pop-up-header{
+    padding-top: 50px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: unset;
+    display: flex;
+    justify-content: center;
+}
+.pop-up-title-button{
+    display: flex;
+    justify-content: space-around;
+    padding: 70px 60px 15px 60px;
+}
+.pop-up-title-button p{
+    font-size: 14px;
+    color:#fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.pop-up-button{
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 50px 0px 50px;
+}
+.pop-up-button li{
+    line-height: 55px;
+    text-align: center;
+    width: 256px;
+    height: 55px;
+    outline: 1px solid #fff;
+    outline-offset: 5px;
+    font-size: 15px;
+}
+.pop-up-button li:first-child,.pop-up-button li:first-child a{
+    background-color: rgb(236, 232, 225);
+    color: rgb(15, 25, 35);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.pop-up-button li:last-child,.pop-up-button li:last-child a{
+    background-color:rgb(255, 70, 85) ;
+    color: rgb(236, 232, 225);
+    text-transform: uppercase;
+    font-weight: bold;
+}
