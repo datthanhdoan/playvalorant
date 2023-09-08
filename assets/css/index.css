@@ -26,6 +26,7 @@ a{
     position: relative;
 }
 .header{
+    position: fixed;
     width: 100%;
     height: 80px;
     background-color: var(--header-bg);
@@ -38,7 +39,6 @@ a{
     position: relative;
 }
 .riot-logo{
-    position: relative;
     margin-left: 20px;
     height: 80px;
     min-width: 85px;
@@ -151,19 +151,24 @@ a{
 .pop-up-button li{
     line-height: 55px;
     text-align: center;
-    width: 256px;
-    height: 55px;
     outline: 1px solid #fff;
     outline-offset: 5px;
     font-size: 15px;
 }
 .pop-up-button li:first-child,.pop-up-button li:first-child a{
+    display: block;
     background-color: rgb(236, 232, 225);
     color: rgb(15, 25, 35);
     text-transform: uppercase;
     font-weight: bold;
+    width: 256px;
+    height: 55px;
 }
 .pop-up-button li:last-child,.pop-up-button li:last-child a{
+    display: block;
+    /* set chieu dai rong cho the a de co the an duoc trong hinh chu nhat */
+    width: 256px;
+    height: 55px;
     background-color:rgb(255, 70, 85) ;
     color: rgb(236, 232, 225);
     text-transform: uppercase;
