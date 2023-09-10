@@ -1,7 +1,15 @@
 @font-face {
     font-family: Nueu;
-    src: url(../fonts/nueu.ttf);
+    src: url(../fonts/Nueu.woff2);
+    font-family: FFMark-Bold;
+    src: url(../fonts/FFMarkW05-Bold.woff2);
+    font-family: FFMark-Heavy;
+    src: url(../fonts/FFMarkW05-Heavy.woff2);
+    font-family: FFMark-Medium;
+    src: url(../fonts/FFMarkW05-Medium.woff2);
 }
+
+
 *{
     padding:0;
     margin: 0;
@@ -22,9 +30,6 @@ a{
     text-decoration: none;
 }
 
-.main{
-    position: relative;
-}
 .header{
     position: fixed;
     width: 100%;
@@ -35,7 +40,7 @@ a{
     align-items: center;
 }
 
-.header ul{
+.header>ul{
     position: relative;
 }
 .riot-logo{
@@ -63,18 +68,118 @@ a{
 }
 
 .nav{
+    position: relative;
     display: flex;
     width: 70%;
     justify-content: space-around;
 }
+.nav li {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
 .nav li a{
+    line-height: 35px;
     width: inherit;
     color: #fff;
-    font-size: 14px;
+    font-size: 13px;
     letter-spacing: 1px;
     font-weight: bold;
     text-transform: uppercase;
 }
+.nav li .snav{
+    padding: 0 20px;
+    border-radius: 5px;
+    height: 35px;
+}
+
+.nav li:hover .snav{
+    background-color:rgb(51, 51, 51);
+}
+
+.nav .info:hover .arrow-down,
+.nav .social-media:hover .arrow-down,
+.nav .support:hover .arrow-down,
+.nav .more:hover .arrow-down{
+
+    background: no-repeat center url(../images/arrow-down-white.png);
+    position: absolute;
+    top:33px;
+    right: 5px;
+    width: 13px;
+    height: 13px;
+    background-size: contain;
+}
+.nav .info .arrow-down,
+.nav .social-media .arrow-down,
+.nav .support .arrow-down,
+.nav .more .arrow-down{
+    position: absolute;
+    background: no-repeat center url(../images/down-arrow.png);
+    top:34px;
+    right: 5px;
+    width: 12px;
+    height: 12px;
+    background-size: contain;
+}
+
+.nav .subnav{
+    display: none;
+    flex-flow: column;
+    justify-content: space-evenly;
+    position: absolute;
+    padding: 15px 0;
+    top: 65px;
+    left: 0;
+    min-width: 200px;
+    background-color: rgb(41, 41, 41);
+    border-top: 4px solid rgb(255, 70, 85);
+    border-radius: 2px 2px 2px 2px;
+}
+
+
+.nav .info:hover .subnav,
+.nav .support:hover .subnav,
+.nav .social-media:hover .subnav
+{
+    display: flex;
+}
+.nav .more:hover .subnav{
+    display: flex;
+    padding-top: 10px;
+    height: 60px;
+}
+.nav .info,.nav .support,.nav .more,.nav .social-media{
+    position: relative;
+}
+
+
+.nav .subnav li{
+    display: flex;
+    justify-content: center;
+    height: 39px;
+    padding: 20px 0;
+}
+.nav .subnav li a{
+    padding-left: 10px;
+    width: 168px;
+    border-radius: 6.4px;
+    line-height: 32px;
+}
+.nav .subnav li:hover a{
+    background-color: rgb(68, 68, 68);
+}
+
+
+.nav .subnav a
+{
+    color: rgb(189, 189, 189);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size:13px;
+}
+
 .search-and-play{
     display: flex;
     min-width: 202px;
