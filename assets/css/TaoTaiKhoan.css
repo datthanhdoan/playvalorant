@@ -1,12 +1,12 @@
 @font-face {
     font-family: Neue_strong;
-    src: url(../fonts/NeueFrutigerWorld-Bold.3ee2d20bd45bb49dcb833404f05fe837.be35983528a1c02212418a09b556f186.vi_VN.woff2);
+    src: url(../fonts/NeueFrutigerWorld-Bold.vi_VN.woff2);
 }
 *{
     padding:0;
     margin: 0;
     box-sizing: border-box;
-    font-family: NeuE_strong;
+    font-family: Neue_strong;
 }
 .screen {
     background-image: url(../images/h1.jpg);
