@@ -1,23 +1,31 @@
 @font-face {
-    font-family: FFMarkW05-M;
-    src: url(../fonts/FFMarkW05-Medium.woff2);
+    font-family: NeueFrutiger-M;
+    src: url(../fonts/NeueFrutigerWorld-Medium.vi_VN.woff2);
 }
 @font-face {
-    font-family: FFMarkW05-B;
+    font-family: NeueFrutiger-B;
     src: url(../fonts/FFMarkW05-Bold.woff2);
 }
 @font-face {
-    font-family: FFMarkW05-H;
+    font-family: NeueFrutiger-H;
     src: url(../fonts/FFMarkW05-Heavy.woff2);
+}
+html{    
+    box-shadow: 0px -200px 150px 0px #00000066 inset;
 }
 *{
     padding: 0px;
     margin: 0px;
-    box-sizing: border-box;
+    font-family: NeueFrutiger-M;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 body{
     background-image: url("../images/desktop_background.jpg");
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 header{
@@ -37,11 +45,11 @@ main{
     background-color: white;
 }
 h2{
-    font-family: FFMarkW05-B;
     padding: 45px 0px 0px;
     text-align: center;
     width: 100%;
     height: 78px;
+    font-weight: 600;
 }
 .loginform{
     display: flex;
@@ -60,7 +68,12 @@ h2{
 .information input{
     width:100%;
     height:44px;
-    padding: 21px 8px 8px;
+    padding: 0.35em 0.5em 0.25em 1em;
+    font-size:  12px;
+    font-family: inherit;
+    background-color:rgba(240, 240, 240, 0.8);
+    border: 2px solid #fff;
+    border-radius: 4px;
 }
 .buttonholder{
     display: grid;
@@ -68,22 +81,102 @@ h2{
     margin:12px 0px;
     grid-gap: 8.5px;
 }
-button{
+.buttonholder button{
     width: 90px;
     height:32px;
     border-radius: 8px;
-    border-color: white;
+    cursor: pointer;
 }
-svg{
+button:active{
+    outline: 2px solid black;   
+    outline-offset: 2px;
+}
+.buttonholder svg{
     width:18px;
     height:18px;
 }
 .checkbox span{
-    font-family: FFMarkW05-M;
     font-size:13px;
     width:100%;
     height:18px;
     position:relative;
     bottom:4px;
     left:3px;
+}
+.submit{
+    display:flex;
+    justify-content: center;
+}
+.submit div{
+    display:flex;
+    justify-content: center;
+    margin: 80px 0px 24px;
+    width: 20%;
+    height: 72px;
+}
+.submit-button{
+    width: 72px;
+    height: 72px;
+    border: 2px solid rgba(128, 128, 128, 0.35);
+    border-radius: 25px;
+    background-color: white;
+    cursor: pointer;
+}
+.submit-button:active{
+    outline: 0px;
+    border: 2px solid rgba(128, 128, 128, 0.6);
+    background-color:rgb(238, 238, 238);
+}
+.submit svg{
+    width:32px;
+    height:32px;
+}
+.option span{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 10.24px;
+    color: #4A4A4A;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+footer{
+    margin: 50px 72px 48px;
+    letter-spacing: 0.5px;
+}
+.footer-link{
+    margin: 5px 0px; 
+    display:flex; 
+    color:#ADADAD;
+    font-size: 11px;
+}
+.footer-link a{
+    padding-right: 15px;
+    font-weight: bold;
+}
+.termsline{ 
+    color:#ADADAD;
+    font-size: 9px;
+}
+.termsline a{
+    text-decoration: underline;
+    color: white;
+}
+select{
+    appearance: none;
+    -webkit-appearance: none;
+    width: 50px;
+    font-size: 12px;
+    font-weight:bold;
+    font-family: inherit;
+    color:#ADADAD;
+    background-color: #ffffff40;
+    border: 2px solid #caced100;
+    border-radius: 0.25rem;
+    color: #ADADAD;
+    cursor: pointer;
 }
