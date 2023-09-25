@@ -65,15 +65,45 @@ h2{
 .information *{
     flex-grow: 1;
 }
+.information input:focus{
+    padding: 0.8em 0.5em 0.15em 0.5em;
+    font-size: 12px;
+}
 .information input{
     width:100%;
     height:44px;
-    padding: 0.35em 0.5em 0.25em 1em;
-    font-size:  12px;
+    padding: 0.5em 1em;
+    font-size:  11px;
     font-family: inherit;
-    background-color:rgba(240, 240, 240, 0.8);
+    background-color:rgba(240, 240, 240, 0.8) ;
     border: 2px solid #fff;
     border-radius: 4px;
+    font-weight: bold;
+}
+.information .inputcontainer{
+    position: relative;
+    width:100%;
+}
+.information input ~ label{
+    font-size: 8px;
+    font-weight: bold;
+    position: absolute;
+    transform: scaleY(0.5); 
+    left: 1em;
+    top: 0.3em;
+    opacity: 0;
+}
+.information input:focus ~ label{
+    transform: scaleY(1);
+    opacity: 1;
+    transform-origin: top;
+    transition: all 0.2s ease-in-out;
+}
+.information input:focus::placeholder{
+    transform: scale(0.5);
+    opacity: 0;
+    transform-origin: 5px 10px;
+    transition: all 0.2s ease-in-out;
 }
 .buttonholder{
     display: grid;
@@ -95,13 +125,59 @@ button:active{
     width:18px;
     height:18px;
 }
+.checkbox{
+    display:flex; 
+    width:120px; 
+    height:18px;
+    position: relative;
+}
+.checkbox label > div{
+    width: 18px;
+    height: 18px;
+    background-color: rgb(190, 39, 42);
+    border: 2px solid rgb(190, 39, 42);
+    position: absolute;
+    border-radius: 5px;
+}
+.checkbox .mouseover{
+    width:16px; 
+    height:16px; 
+    border-radius: 4px;
+    position: absolute;
+    opacity:0;
+    left: -1px;
+    background-color:black;
+}
+.checkbox .checkboxinput{
+    opacity: 0;
+    position: absolute;
+    background: transparent;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: block;
+    height: 18px !important;
+    width: 18px !important;
+}
 .checkbox span{
     font-size:13px;
     width:100%;
     height:18px;
     position:relative;
     bottom:4px;
-    left:3px;
+    left:23px;
+}
+.stroke{
+    width: 20px;
+    position:absolute;
+    left:-1px;
+    overflow-clip-margin: content-box;
+    overflow: hidden;
+    fill: transparent;
+    align-self: baseline;
+    stroke: red;
+    padding: 3px 5px 5px;
+    stroke-width: 5;
 }
 .submit{
     display:flex;
@@ -173,10 +249,12 @@ select{
     font-size: 12px;
     font-weight:bold;
     font-family: inherit;
-    color:#ADADAD;
-    background-color: #ffffff40;
+    color: transparent;
+    background-color: rgba(235, 235, 235, 0.2);
     border: 2px solid #caced100;
     border-radius: 0.25rem;
-    color: #ADADAD;
     cursor: pointer;
+}
+.footer .footerlink > span{
+
 }
