@@ -55,6 +55,7 @@ h2{
     display: flex;
     padding: 24px 0px 0px;
     width: 100%;
+    flex-grow: 1;
 }
 .information{
     display: flex;
@@ -62,8 +63,10 @@ h2{
     height: 194px;
     flex-direction: column;
 }
-.information *{
-    flex-grow: 1;
+.inputcontainer{
+    width:100%; 
+    height:48px; 
+    padding:2px 0px;
 }
 .information input:focus{
     padding: 0.8em 0.5em 0.15em 0.5em;
@@ -85,7 +88,7 @@ h2{
     width:100%;
 }
 .information input ~ label{
-    font-size: 8px;
+    font-size: 10px;
     font-weight: bold;
     position: absolute;
     transform: scaleY(0.5); 
@@ -131,33 +134,15 @@ button:active{
     height:18px;
     position: relative;
 }
-.checkbox label > div{
-    width: 18px;
-    height: 18px;
-    background-color: rgb(190, 39, 42);
-    border: 2px solid rgb(190, 39, 42);
-    position: absolute;
-    border-radius: 5px;
-}
-.checkbox .mouseover{
-    width:16px; 
-    height:16px; 
-    border-radius: 4px;
-    position: absolute;
-    opacity:0;
-    left: -1px;
-    background-color:black;
-}
 .checkbox .checkboxinput{
-    opacity: 0;
     position: absolute;
     background: transparent;
     border: none;
     box-sizing: border-box;
     border-radius: 5px;
     display: block;
-    height: 18px !important;
-    width: 18px !important;
+    height: 18px;
+    width: 18px;
 }
 .checkbox span{
     font-size:13px;
@@ -166,18 +151,6 @@ button:active{
     position:relative;
     bottom:4px;
     left:23px;
-}
-.stroke{
-    width: 20px;
-    position:absolute;
-    left:-1px;
-    overflow-clip-margin: content-box;
-    overflow: hidden;
-    fill: transparent;
-    align-self: baseline;
-    stroke: red;
-    padding: 3px 5px 5px;
-    stroke-width: 5;
 }
 .submit{
     display:flex;
@@ -193,7 +166,7 @@ button:active{
 .submit-button{
     width: 72px;
     height: 72px;
-    border: 2px solid rgba(128, 128, 128, 0.35);
+    border: 2px solid rgba(128, 128, 128, 0.25);
     border-radius: 25px;
     background-color: white;
     cursor: pointer;
@@ -207,12 +180,13 @@ button:active{
     width:32px;
     height:32px;
 }
-.option span{
-    display:flex;
+.option{
+    display: flex;
     flex-direction: column;
-    justify-content: center;
+}
+.option span{
     font-size: 10.24px;
-    color: #4A4A4A;
+    color: #3b3b3b;
     font-weight: bold;
     letter-spacing: 1px;
 }
@@ -223,6 +197,9 @@ a{
 footer{
     margin: 50px 72px 48px;
     letter-spacing: 0.5px;
+}
+.footer-link-container{
+    display: flex;
 }
 .footer-link{
     margin: 5px 0px; 
@@ -249,12 +226,123 @@ select{
     font-size: 12px;
     font-weight:bold;
     font-family: inherit;
-    color: transparent;
+    color: black;
     background-color: rgba(235, 235, 235, 0.2);
     border: 2px solid #caced100;
     border-radius: 0.25rem;
     cursor: pointer;
+    padding: 0px 2px;
 }
-.footer .footerlink > span{
-
+@media screen and (max-width: 1040px){
+    body{
+        background-image: url(../images/mobile_background.jpg);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header{
+        display:flex;
+        justify-content: center;
+        width:100%;
+        height: 90px;
+        padding: 24px 16px;
+    }
+    header img{
+        width: 140px;
+    }
+    main{
+        width: 700px;
+        height: 750px;
+        margin: 200px;
+        padding: 30px 40px;
+    }
+    .information input:focus{
+        font-size: 14px;
+    }
+    .information{
+        display: flex;
+        flex-basis: 100%;
+        height: 260px;
+        flex-direction: column;
+    }
+    .inputcontainer{
+        height:100px;
+    }
+    .information input{
+        height:70px;
+        font-size: 15px;
+    }
+    .buttonholder button{
+        margin-top: 20px;
+        width: 150px;
+        height:60px;
+        border-radius: 15px;
+    }
+    button:active{
+        outline: 2px solid black;   
+        outline-offset: 2px;
+    }
+    .buttonholder svg{
+        width:32px;
+        height:32px;
+    }
+    .checkbox{
+        display:flex; 
+        margin-top: 5px;
+        width:120px; 
+        height:40px;
+        position: relative;
+    }
+    .checkbox .checkboxinput{
+        height: 40px;
+        width: 40px;
+    }
+    .checkbox span{
+        font-size:16px;
+        height:34px;
+        position:relative;
+        bottom:-7px;
+        left:50px;
+    }
+    .submit div{
+        display:flex;
+        justify-content: center;
+        margin: 80px 0px 24px;
+        height: 100px;
+    }
+    .submit-button{
+        width: 105px;
+        height: 105px;
+        border-radius: 40px;
+    }
+    .submit svg{
+        width:38px;
+        height:38px;
+    }
+    .option span{
+        font-size: 13.5px;
+    }
+    .footer{
+        margin-bottom: 10px;
+    }
+    .footer-link-container{
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .footer-link{
+        font-size: 13px;
+    }
+    .termsline{ 
+        font-size: 10px;
+    }
+    .information input ~ label{
+        font-size: 13px;
+        font-weight: bold;
+        position: absolute;
+        transform: scaleY(0.5); 
+        left: 0.8em;
+        top: 0.35em;
+        opacity: 0;
+    }
 }
