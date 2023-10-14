@@ -2,13 +2,13 @@
 <html lang="vi">
     <head>
       <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Tạo tài khoản</title>
-      <link rel="stylesheet" href="../css/TaoTaiKhoan.css">
+      <meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale=1.0">
+      <link rel="stylesheet" href="/Valorant/css/TaoTaiKhoan.css">
 </head>
-<body class="screen">      
-    <div class="main">      
-        <h3 class="title" >TẠO 1 TÀI KHOẢN</h3>          
+<body class="screen">       
+    <div class="main">  
+        <div class="TieuDe"><h3 class="title" >TẠO 1 TÀI KHOẢN</h3>  </div>             
         <div class="signup-wrapper">
             <form>
                 <h5 class="heading-title">Email của bạn là gì?</h5>
@@ -26,7 +26,7 @@
                 <div class="subheader">
                     <div class="web-caption">Bạn cũng có thể tạo tài khoản với</div>
                 </div>
-                <div>
+                <div class="AllButton">
                     <button type="button" class="login-button__facebook" title="facebook"></button>
                     <button type="button" class="login-button__google" title="google"></button>
                     <button type="button" class="login-button__apple" title="apple"></button>
@@ -36,7 +36,7 @@
                     <button type="submit" class="submit" title="Tiếp theo">-></button>
                 </div>
                 <div class="change">
-                    <a href="" class="change">Đã có sẵn tài khoản?</a>
+                    <a href="" class="change" data-testid="signup-signin-link">Đã có sẵn tài khoản?</a>
                 </div>         
             </form>
         </div>
@@ -44,13 +44,15 @@
             <footer class="footer-menu">
                 <div class="footer-menu-actions">
                     <div class="footer-menu-links">
-                        <a href="" class="footer-menu__link">Hỗ trợ</a>
-                        <a href="" class="footer-menu__link">Chính sách Quyền riêng tư</a>
-                        <a href="" class="footer-menu__link">Điều Khoản Sử Dụng</a>
+                        <a href="#" class="footer-menu__link">Hỗ trợ</a>
+                        <a href="#" class="footer-menu__link">Chính sách Quyền riêng tư</a>
+                        <a href="#" class="footer-menu__link">Điều Khoản Sử Dụng</a>
                         <a href="" class="footer-menu__link">Tùy Chọn Cookie</a>
                     </div>
+                    <div class="line">
                     <div class="footer-menu-language">
-                        <select class="language-selector">
+                        <select class="language-selector" data-testid="language-selector">
+                            <option value="vi_VN" lang="vi">Tiếng Việt</option>
                             <option value="en_US" lang="en">English</option>
                             <option value="cs_CZ" lang="cs">Čeština</option>
                             <option value="de_DE" lang="de">Deutsch</option>
@@ -67,7 +69,6 @@
                             <option value="ru_RU" lang="ru">Русский</option>
                             <option value="th_TH" lang="th">ภาษาไทย</option>
                             <option value="tr_TR" lang="tr">Türkçe</option>
-                            <option value="vi_VN" lang="vi">Tiếng Việt</option>
                             <option value="ms_MY" lang="ms">Bahasa Melayu</option>
                             <option value="ja_JP" lang="ja">日本語</option>
                             <option value="ko_KR" lang="ko">한국어</option>
@@ -76,6 +77,7 @@
                             <option value="ar_AE" lang="ar">العربية</option>                
                         </select>
                         <span class="language-selector"></span>
+                    </div>
                     </div>
                     <div class="footer-menu-links_2">
                         <div class="footer-menu-content">
@@ -90,4 +92,4 @@
         </div>        
     </div>
 </body>       
-	
+</html>
