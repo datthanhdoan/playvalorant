@@ -211,7 +211,7 @@
 
 @media only screen and (max-width: 768px){
   .screen {
-    background-image: url(../images/h3.jpg);
+    background-image: url(../images/mobile-background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
