@@ -1,0 +1,33 @@
+@font-face {
+  font-family: Nueu;
+  src: url(../fonts/Nueu.woff2);
+  font-family: FFMark-Bold;
+  src: url(../fonts/FFMarkW05-Bold.woff2);
+  font-family: FFMark-Heavy;
+  src: url(../fonts/FFMarkW05-Heavy.woff2);
+  font-family: FFMark-Medium;
+  src: url(../fonts/FFMarkW05-Medium.woff2);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Nueu, Arial, sans-serif;
+}
+:root {
+  --header-bg: rgb(17, 17, 17);
+  --dowload-bg: rgb(52, 52, 52);
+  --footer-bg: rgb(17, 17, 17);
+  --button-bg: rgb(255, 70, 85);
+}
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+.video-play {
+  width: 100%;
+  height: 400px;
+}

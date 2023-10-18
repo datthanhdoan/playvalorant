@@ -54,6 +54,7 @@ a {
   padding: 18px;
   line-height: 12.5px;
   padding-bottom: 48px;
+  box-sizing: border-box;
 }
 .nav-social-media li {
   cursor: pointer;
@@ -68,10 +69,10 @@ a {
   width: 48px;
   height: 48px;
   margin: 6px;
-  fill: #f9f9f9;
   fill-rule: evenodd;
 }
 .nav-social-media li svg {
+  fill: #f9f9f9;
   width: 24px;
   height: 24px;
 }
