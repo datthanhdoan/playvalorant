@@ -11,10 +11,29 @@
     <script type="text/javascript" src="assets/jquery/slick/slick.min.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/jquery/slick/slick-theme.css">
     <link rel="stylesheet" href="assets/css/index.css">
+    <script>
+        $(function () {
+            $("#header").load("assets/pages/header.html", function () {
+                // Sau khi header.html được load, tải tệp CSS của header
+                $.get("assets/css/header.css", function (data) {
+                    $("<style>").text(data).appendTo("head");
+                });
+            });
+            $("#footer").load("assets/pages/footer.html", function () {
+                // Sau khi footer.html được load, tải tệp CSS của footer
+                $.get("assets/css/footer.css", function (data) {
+                    $("<style>").text(data).appendTo("head");
+                });
+            });
+        });
+
+    </script>
 </head>
 
 <body>
-
+    <div id="header"></div>
+    <div class="video-play"></div>
+    <div id="footer"></div>
 </body>
 
 </html>

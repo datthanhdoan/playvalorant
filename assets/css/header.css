@@ -89,6 +89,7 @@ a {
   height: 80px;
   right: 0;
   padding: 0 4px 0 0;
+  margin-right: 50px;
   /* display: flex; */
   /* background-color: #fff; */
 }
