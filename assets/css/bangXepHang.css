@@ -74,6 +74,11 @@ a{
     padding: 50px 0px;
     text-align: center;
 }
+.search form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .search input{
     background-color: #ded9d0;
     width: 400px;
@@ -492,12 +497,11 @@ footer .logo svg:hover{
         height: 24px;
     }
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 772px){
     .search{
         text-align: left;
     }
     .search form{
-        display: flex;
         flex-direction: column;
     }
     .search input{
