@@ -1,0 +1,161 @@
+@font-face {
+  font-family: Nueu;
+  src: url(../fonts/Nueu.woff2);
+  font-family: FFMark-Bold;
+  src: url(../fonts/FFMarkW05-Bold.woff2);
+  font-family: FFMark-Heavy;
+  src: url(../fonts/FFMarkW05-Heavy.woff2);
+  font-family: FFMark-Medium;
+  src: url(../fonts/FFMarkW05-Medium.woff2);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Nueu, Arial, sans-serif;
+}
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+.footer {
+  padding-bottom: 50px;
+  background-color: #111111;
+}
+.download {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  background-color: #292929;
+  justify-content: center;
+  align-items: center;
+}
+.download a {
+  display: block;
+  font-weight: bold;
+  color: #f9f9f9;
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: 6.4px;
+}
+.download a:hover {
+  background: rgba(128, 128, 128, 0.3);
+}
+
+.nav-social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #111111;
+  padding: 18px;
+  line-height: 12.5px;
+  padding-bottom: 48px;
+}
+.nav-social-media li {
+  cursor: pointer;
+  background-color: #808080;
+  border: 12px;
+  background-color: #282828;
+  line-height: 12.5px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  margin: 6px;
+  fill: #f9f9f9;
+  fill-rule: evenodd;
+}
+.nav-social-media li svg {
+  width: 24px;
+  height: 24px;
+}
+
+.game-companies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111111;
+}
+.game-companies li {
+  margin: 8px;
+}
+.game-companies .riot svg {
+  fill: #737373;
+}
+.game-companies .riot:hover svg {
+  fill: #f9f9f9;
+}
+
+.riot-company {
+  background-color: #111111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+}
+.riot-company p {
+  color: #7e7e7e;
+  font: 13px;
+}
+
+.riot-address {
+  background-color: #111111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+}
+
+.riot-address p {
+  max-width: 640px;
+  text-align: center;
+  color: #7e7e7e;
+  font: 13px;
+}
+
+.nav {
+  background-color: #111111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+}
+
+.nav li a {
+  display: block;
+  margin: 10px;
+  padding: 8px 16px;
+  color: #f9f9f9;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 6.4px;
+  transition: all 0.2s linear;
+}
+
+.nav li a:hover {
+  background: rgba(128, 128, 128, 0.3);
+}
+
+.age-restriction {
+  background-color: #111111;
+  display: flex;
+  justify-content: center;
+}
+.age-restriction img {
+  padding: 12px;
+  border-radius: 6.4px;
+  background: rgba(128, 128, 128, 0.3);
+}
+@media all and (min-width: 1025px) {
+  .nav {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
