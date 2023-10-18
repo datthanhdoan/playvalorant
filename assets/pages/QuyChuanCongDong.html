@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html lang="vi">
-    <head>
-      <meta charset="utf-8">
-      <title>Quy chuẩn cộng đồng</title>
-      <meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale=1.0">
-      <link rel="stylesheet" href="../css/QuyChuanCongDong.css">
+
+<head>
+    <meta charset="utf-8">
+    <title>Quy chuẩn cộng đồng</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale=1.0">
+    <link rel="stylesheet" href="../css/QuyChuanCongDong.css">
+    <script>
+        $(function () {
+            $("#header").load("header.html", function () {
+                // Sau khi header.html được load, tải tệp CSS của header
+                $.get("assets/css/header.css", function (data) {
+                    $("<style>").text(data).appendTo("head");
+                });
+            });
+        });
+    </script>
 </head>
+
 <body>
-    <a href="#" id="back-to-top" title="Back to Top"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="m6.3 3 3.6 3.5m4.5 3.5-8.2 7" fill="none" stroke="#ece8e1" pathLength="1"></path></svg></a>
-    <a href="#" class="home-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="m6.3 3 3.6 3.5m4.5 3.5-8.2 7" fill="none" stroke="#ece8e1" pathLength="1"></path></svg> TỚI DANH SÁCH BÀI VIẾT</a>
+    <div id="header"></div>
+
+    <a href="#" id="back-to-top" title="Back to Top"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+            <path d="m6.3 3 3.6 3.5m4.5 3.5-8.2 7" fill="none" stroke="#ece8e1" pathLength="1"></path>
+        </svg></a>
+    <a href="#" class="home-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+            <path d="m6.3 3 3.6 3.5m4.5 3.5-8.2 7" fill="none" stroke="#ece8e1" pathLength="1"></path>
+        </svg> TỚI DANH SÁCH BÀI VIẾT</a>
     <header>
         <div class="hinh1">
             <img src="../images/h2.jpg">
@@ -21,7 +39,12 @@
                 <div class="dong1">QUY CHUẨN CỘNG ĐỒNG <br>VALORANT</div>
             </div>
             <div class="noidung2">
-                <p>Trước khi tham gia hàng chờ tìm trận đấu đầu tiên, người chơi sẽ phải đồng ý với những quy chuẩn được nhắc tới ở đây. Chúng tôi khuyến khích tất cả người chơi đọc toàn bộ tài liệu và hy vọng tài liệu này sẽ giúp bạn hiểu rõ hơn về cộng đồng mà chúng tôi muốn được cùng người chơi xây dựng cho VALORANT. Xin lưu ý rằng các Quy Chuẩn Ứng Xử dành cho VALORANT này là những quy định bổ sung cho Điều khoản Dịch vụ của Riot Games mà bạn phải chấp nhận tuân thủ trước khi được phép tham gia bất kỳ trò chơi nào của chúng tôi.</p>
+                <p>Trước khi tham gia hàng chờ tìm trận đấu đầu tiên, người chơi sẽ phải đồng ý với những quy chuẩn được
+                    nhắc tới ở đây. Chúng tôi khuyến khích tất cả người chơi đọc toàn bộ tài liệu và hy vọng tài liệu
+                    này sẽ giúp bạn hiểu rõ hơn về cộng đồng mà chúng tôi muốn được cùng người chơi xây dựng cho
+                    VALORANT. Xin lưu ý rằng các Quy Chuẩn Ứng Xử dành cho VALORANT này là những quy định bổ sung cho
+                    Điều khoản Dịch vụ của Riot Games mà bạn phải chấp nhận tuân thủ trước khi được phép tham gia bất kỳ
+                    trò chơi nào của chúng tôi.</p>
                 <p></p>
                 <h1>
                     <strong>Các Giá Trị Trọng Yếu</strong>
@@ -30,116 +53,191 @@
                     <strong>Chiến Thắng Bằng Tinh Thần Đồng Đội</strong>
                 </h2>
                 <p>
-                    Những trải nghiệm thú vị nhất của VALORANT đều bắt nguồn từ việc phối hợp cùng đồng đội. Chúng tôi tin rằng khả năng phối hợp với đồng đội là một yếu tố quan trọng để thể hiện kỹ năng cá nhân, và mọi game thủ chỉ có thể đạt phong độ tốt nhất khi phối hợp tốt cùng đồng đội. <br/>
+                    Những trải nghiệm thú vị nhất của VALORANT đều bắt nguồn từ việc phối hợp cùng đồng đội. Chúng tôi
+                    tin rằng khả năng phối hợp với đồng đội là một yếu tố quan trọng để thể hiện kỹ năng cá nhân, và mọi
+                    game thủ chỉ có thể đạt phong độ tốt nhất khi phối hợp tốt cùng đồng đội. <br />
                 </p>
-                Mặc dù những pha xử lý cá nhân xuất thần giúp bạn giành chiến thắng sẽ mang lại một cảm giác thật tuyệt vời, nhưng cảm giác chiến thắng ngọt ngào nhất lại là khi cả đội cùng phối hợp để có thể giành thắng lợi trong từng vòng đấu. Chúng tôi sẽ mang đến những trải nghiệm, phương thức và sân chơi nhằm cho phép các thành viên trong toàn đội có thể kết hợp nhịp nhàng, cho dù mới chỉ chơi chung lần đầu hay đã cùng nhau thi đấu tới hàng trăm trận.<p></p>
+                Mặc dù những pha xử lý cá nhân xuất thần giúp bạn giành chiến thắng sẽ mang lại một cảm giác thật tuyệt
+                vời, nhưng cảm giác chiến thắng ngọt ngào nhất lại là khi cả đội cùng phối hợp để có thể giành thắng lợi
+                trong từng vòng đấu. Chúng tôi sẽ mang đến những trải nghiệm, phương thức và sân chơi nhằm cho phép các
+                thành viên trong toàn đội có thể kết hợp nhịp nhàng, cho dù mới chỉ chơi chung lần đầu hay đã cùng nhau
+                thi đấu tới hàng trăm trận.<p></p>
                 <h2>
                     <strong>Sự Công Bằng Trong Mỗi Trận Đấu</strong>
                 </h2>
                 <p>
-                    Để mỗi trận đấu đều có ý nghĩa, mọi điều kiện của trận đấu đó đều phải công bằng với tất cả người chơi. Chúng tôi tin rằng một trận đấu công bằng là một trận đấu không có gian lận, không có hành vi tận dụng lỗ hổng hệ thống game và không có bất kỳ hình thức quấy rối nào. <br/>
+                    Để mỗi trận đấu đều có ý nghĩa, mọi điều kiện của trận đấu đó đều phải công bằng với tất cả người
+                    chơi. Chúng tôi tin rằng một trận đấu công bằng là một trận đấu không có gian lận, không có hành vi
+                    tận dụng lỗ hổng hệ thống game và không có bất kỳ hình thức quấy rối nào. <br />
                 </p>
-                Chúng tôi luôn hướng tới việc giữ vững tính cạnh tranh công bằng, cũng như đảm bảo rằng tất cả người chơi đều nhận được sự tôn trọng xứng đáng trong hệ sinh thái của chúng tôi. Khi giải quyết các trường hợp vi phạm, chúng tôi tin rằng hình phạt cần phản ánh đúng các quy chuẩn của cộng đồng và giải quyết thỏa đáng những hệ quả của hành vi gây rối đó thay vì trừng phạt quá mức.<p></p>
+                Chúng tôi luôn hướng tới việc giữ vững tính cạnh tranh công bằng, cũng như đảm bảo rằng tất cả người
+                chơi đều nhận được sự tôn trọng xứng đáng trong hệ sinh thái của chúng tôi. Khi giải quyết các trường
+                hợp vi phạm, chúng tôi tin rằng hình phạt cần phản ánh đúng các quy chuẩn của cộng đồng và giải quyết
+                thỏa đáng những hệ quả của hành vi gây rối đó thay vì trừng phạt quá mức.<p></p>
                 <h2>
                     <strong>Một Tựa Game Chú Trọng Trải Nghiệm Người Chơi</strong>
                 </h2>
                 <p></p>
-                Việc thiết lập những điều kiện chơi của VALORANT nhằm cho phép mọi game thủ có thể đạt phong độ cao nhất phụ thuộc hoàn toàn vào chúng tôi. Điều đó có nghĩa là đảm bảo sự an toàn, tính công bằng và kiểm soát tốt mọi trải nghiệm trên nền tảng trò chơi. Chúng tôi sẽ nỗ lực cung cấp cho người chơi các công cụ cần thiết để bảo vệ bản thân và tài khoản của mình cũng như luôn tin tưởng rằng người chơi sẽ sử dụng các công cụ này vào mục đích cải thiện trải nghiệm trò chơi.<br/>
-                <br/>
-                Chúng tôi tin rằng cách tốt nhất là cung cấp cho người chơi quyền kiểm soát toàn bộ tương tác với đồng đội/đối thủ, và đưa ra các lựa chọn thích hợp để điều chỉnh những tương tác đó - các lựa chọn này sẽ không làm ảnh hưởng đến khả năng thi đấu và phối hợp cùng đồng đội của người chơi. Mặc dù có rất nhiều lựa chọn, chúng tôi vẫn cho phép mỗi người chơi tự mình quyết định cách họ phối hợp cùng đồng đội cũng như ngăn cản việc người chơi buộc phải rời khỏi kênh giao tiếp do sợ hãi hoặc bị lăng mạ.<p></p>
+                Việc thiết lập những điều kiện chơi của VALORANT nhằm cho phép mọi game thủ có thể đạt phong độ cao nhất
+                phụ thuộc hoàn toàn vào chúng tôi. Điều đó có nghĩa là đảm bảo sự an toàn, tính công bằng và kiểm soát
+                tốt mọi trải nghiệm trên nền tảng trò chơi. Chúng tôi sẽ nỗ lực cung cấp cho người chơi các công cụ cần
+                thiết để bảo vệ bản thân và tài khoản của mình cũng như luôn tin tưởng rằng người chơi sẽ sử dụng các
+                công cụ này vào mục đích cải thiện trải nghiệm trò chơi.<br />
+                <br />
+                Chúng tôi tin rằng cách tốt nhất là cung cấp cho người chơi quyền kiểm soát toàn bộ tương tác với đồng
+                đội/đối thủ, và đưa ra các lựa chọn thích hợp để điều chỉnh những tương tác đó - các lựa chọn này sẽ
+                không làm ảnh hưởng đến khả năng thi đấu và phối hợp cùng đồng đội của người chơi. Mặc dù có rất nhiều
+                lựa chọn, chúng tôi vẫn cho phép mỗi người chơi tự mình quyết định cách họ phối hợp cùng đồng đội cũng
+                như ngăn cản việc người chơi buộc phải rời khỏi kênh giao tiếp do sợ hãi hoặc bị lăng mạ.<p></p>
                 <p></p>
                 <h1>
                     <strong>Kỳ Vọng Của Chúng Tôi</strong>
-                    <br/>
+                    <br />
                 </h1>
                 <p>
-                    Mỗi game thủ VALORANT đều xứng đáng có cơ hội được là chính mình và được chơi hết mình. Bạn xứng đáng với trải nghiệm chơi không có hành vi quấy rối, thù hằn và lăng mạ; đồng đội và đối thủ của bạn cũng vậy.<br/>
-                    <br/>Để có thể tạo ra một trò chơi với đầy đủ những giá trị đã nhắc tới ở trên, chúng tôi cần sự hỗ trợ của các bạn. Khi chơi VALORANT, chúng tôi kỳ vọng và đồng thời yêu cầu bạn cam kết những điều sau:
+                    Mỗi game thủ VALORANT đều xứng đáng có cơ hội được là chính mình và được chơi hết mình. Bạn xứng
+                    đáng với trải nghiệm chơi không có hành vi quấy rối, thù hằn và lăng mạ; đồng đội và đối thủ của bạn
+                    cũng vậy.<br />
+                    <br />Để có thể tạo ra một trò chơi với đầy đủ những giá trị đã nhắc tới ở trên, chúng tôi cần sự hỗ
+                    trợ của các bạn. Khi chơi VALORANT, chúng tôi kỳ vọng và đồng thời yêu cầu bạn cam kết những điều
+                    sau:
                 </p>
                 <h2>
                     <strong>TRANH TÀI ĐỂ CÙNG NHAU CHIẾN THẮNG</strong>1
                 </h2>
                 <p class="margin">
-                    <strong>Tinh thần đồng đội là con đường dẫn tới chiến thắng. Bạn cần hiểu rằng mình chỉ có thể chiến thắng khi sát cánh CÙNG VỚI đồng đội và không thể thiếu họ.</strong>
+                    <strong>Tinh thần đồng đội là con đường dẫn tới chiến thắng. Bạn cần hiểu rằng mình chỉ có thể chiến
+                        thắng khi sát cánh CÙNG VỚI đồng đội và không thể thiếu họ.</strong>
                 </p>
                 <p>Ví dụ, chúng tôi yêu cầu và khuyến khích bạn:</p>
                 <p>
-                    ✓ Luôn tập trung vào chiến lược. Nếu không thể thống nhất cùng đồng đội, hãy lựa chọn một mục tiêu và cố gắng hoàn thành mục tiêu đó. Phối hợp để thực hiện một kế hoạch không hoàn hảo vẫn tốt hơn nhiều so với việc mỗi người có một mục tiêu riêng và không liên quan tới nhau.<br/>
-                    ✓ Tận dụng các điểm mạnh và khỏa lấp những điểm yếu của cả đội. Làm như vậy và đồng đội cũng sẽ hỗ trợ bạn!<br/>
-                    ✓ Ăn mừng những màn xử lý xuất thần của đồng đội. Hãy là người tạo nền tảng cho những pha xử lý đó và giúp đồng đội tỏa sáng!<br/>✓ Hãy luôn cố gắng hết mình cho mỗi trận đấu. Ai cũng sẽ có những lúc chơi rất tệ - chúng tôi hiểu rõ điều này! Nhưng đừng tham gia hàng chờ nếu bạn không có mong muốn giành chiến thắng.
+                    ✓ Luôn tập trung vào chiến lược. Nếu không thể thống nhất cùng đồng đội, hãy lựa chọn một mục tiêu
+                    và cố gắng hoàn thành mục tiêu đó. Phối hợp để thực hiện một kế hoạch không hoàn hảo vẫn tốt hơn
+                    nhiều so với việc mỗi người có một mục tiêu riêng và không liên quan tới nhau.<br />
+                    ✓ Tận dụng các điểm mạnh và khỏa lấp những điểm yếu của cả đội. Làm như vậy và đồng đội cũng sẽ hỗ
+                    trợ bạn!<br />
+                    ✓ Ăn mừng những màn xử lý xuất thần của đồng đội. Hãy là người tạo nền tảng cho những pha xử lý đó
+                    và giúp đồng đội tỏa sáng!<br />✓ Hãy luôn cố gắng hết mình cho mỗi trận đấu. Ai cũng sẽ có những
+                    lúc chơi rất tệ - chúng tôi hiểu rõ điều này! Nhưng đừng tham gia hàng chờ nếu bạn không có mong
+                    muốn giành chiến thắng.
                 </p>
                 <p>
-                    ✗ Đừng bỏ mặc đồng đội, ngay cả khi họ có một trận đấu tồi tệ.<br/>
-                    ✗ Tuyệt đối không quấy phá đồng đội hoặc tìm cách phá hỏng trận đấu, ngay cả khi bạn không còn hứng thú thi đấu.<br/>
-                    ✗ Vui lòng đừng lên mặt chỉ dạy đồng đội nên chơi như thế nào. Tuy nhiên nếu họ muốn nghe, các phản hồi mang tính xây dựng sẽ rất tuyệt vời! Nhưng chớ ra lệnh cho đồng đội, ngay cả khi bạn cảm thấy bực bội.<br/>✗ Đừng dành nhiều thời gian để tranh luận hơn là hợp tác. Nếu bạn bị hạ gục, hãy tập trung vào việc giúp đồng đội kết thúc vòng đấu với kết quả tốt nhất thay vì tranh cãi với họ.
+                    ✗ Đừng bỏ mặc đồng đội, ngay cả khi họ có một trận đấu tồi tệ.<br />
+                    ✗ Tuyệt đối không quấy phá đồng đội hoặc tìm cách phá hỏng trận đấu, ngay cả khi bạn không còn hứng
+                    thú thi đấu.<br />
+                    ✗ Vui lòng đừng lên mặt chỉ dạy đồng đội nên chơi như thế nào. Tuy nhiên nếu họ muốn nghe, các phản
+                    hồi mang tính xây dựng sẽ rất tuyệt vời! Nhưng chớ ra lệnh cho đồng đội, ngay cả khi bạn cảm thấy
+                    bực bội.<br />✗ Đừng dành nhiều thời gian để tranh luận hơn là hợp tác. Nếu bạn bị hạ gục, hãy tập
+                    trung vào việc giúp đồng đội kết thúc vòng đấu với kết quả tốt nhất thay vì tranh cãi với họ.
                 </p>
                 <p></p>
                 <h2>
                     <strong>CAM KẾT TÔN TRỌNG VÀ ĐỒNG CẢM</strong>
                 </h2>
                 <p class="margin">
-                    <strong>Chúng tôi yêu cầu bạn cư xử đúng mực và tôn trọng người chơi khác. Hãy tập đồng cảm và tìm cách xây dựng niềm tin với đồng đội để họ có thể đạt phong độ tốt nhất.</strong>
+                    <strong>Chúng tôi yêu cầu bạn cư xử đúng mực và tôn trọng người chơi khác. Hãy tập đồng cảm và tìm
+                        cách xây dựng niềm tin với đồng đội để họ có thể đạt phong độ tốt nhất.</strong>
                 </p>
                 <p>Ví dụ, chúng tôi yêu cầu và khuyến khích bạn:</p>
                 <p>
-                    ✓ Tuân thủ quy tắc sau - Hãy đối xử với người khác theo cách mà họ muốn được đối xử. Nếu bạn không biết điều gì đó, hãy hỏi.<br/>
-                    ✓ Tôn trọng sự khác biệt và trải nghiệm cá nhân. VALORANT là một cộng đồng toàn cầu.<br/>
-                    ✓ Hãy đối xử với mọi người tựa như họ có thể dạy cho bạn một điều gì đó - biết đâu họ lại mở rộng quan điểm về thế giới của bạn thì sao?<br/>
-                    ✓ Hãy thận trọng khi sử dụng ngôn từ gay gắt. Nếu chỉ mới gặp nhau lần đầu, đừng cho rằng mọi người sẽ hiểu rõ ý nghĩa hoặc ý định từ lời nói của bạn. Nếu ai đó yêu cầu bạn không dùng một câu từ nào đó, hãy dừng lại - ngay cả khi bạn nghĩ rằng câu từ đó chẳng hề gây khó chịu.<br/>✓ Các kênh giao tiếp là không gian chung của nhiều người chơi! Hãy tập trung trao đổi những thông tin có ích cho sự phối hợp của cả đội, ngay cả khi bạn đang chờ được hồi sinh.
+                    ✓ Tuân thủ quy tắc sau - Hãy đối xử với người khác theo cách mà họ muốn được đối xử. Nếu bạn không
+                    biết điều gì đó, hãy hỏi.<br />
+                    ✓ Tôn trọng sự khác biệt và trải nghiệm cá nhân. VALORANT là một cộng đồng toàn cầu.<br />
+                    ✓ Hãy đối xử với mọi người tựa như họ có thể dạy cho bạn một điều gì đó - biết đâu họ lại mở rộng
+                    quan điểm về thế giới của bạn thì sao?<br />
+                    ✓ Hãy thận trọng khi sử dụng ngôn từ gay gắt. Nếu chỉ mới gặp nhau lần đầu, đừng cho rằng mọi người
+                    sẽ hiểu rõ ý nghĩa hoặc ý định từ lời nói của bạn. Nếu ai đó yêu cầu bạn không dùng một câu từ nào
+                    đó, hãy dừng lại - ngay cả khi bạn nghĩ rằng câu từ đó chẳng hề gây khó chịu.<br />✓ Các kênh giao
+                    tiếp là không gian chung của nhiều người chơi! Hãy tập trung trao đổi những thông tin có ích cho sự
+                    phối hợp của cả đội, ngay cả khi bạn đang chờ được hồi sinh.
                 </p>
                 <p>
-                    ✗ Tuyệt đối không sử dụng ngôn ngữ thù hằn hoặc lăng mạ. Chúng tôi không dung thứ các bình luận mang chủ ý xúc phạm về giới tính, chủng tộc, khuynh hướng tình dục, tuổi tác, khiếm khuyết về tinh thần hoặc thể chất, tín ngưỡng tôn giáo hoặc nguồn gốc xuất xứ của bất cứ người chơi nào.<br/>
-                    ✗ Đừng bày trò đùa cợt về người khác. Con người không phải là thứ để đem ra làm trò cười.<br/>
-                    ✗ Mọi hình thức đe dọa đều bị nghiêm cấm trong VALORANT. Ý định thật sự của bạn là gì không quan trọng. Nếu người khác cảm thấy bị xúc phạm, lỗi sẽ hoàn toàn thuộc về bạn cho dù bạn có nghĩ rắng đó “chỉ là một trò đùa”.<br/>
-                    ✗ Đừng nghĩ rằng người khác phải “cứng rắn lên” và chấp nhận lời nói của bạn. Nếu bạn làm phật lòng người khác, hãy nhận lỗi và rút kinh nghiệm lần sau. Hãy tôn trọng ranh giới của tất cả mọi người.<br/>✗ Tránh làm rối các kênh giao tiếp bằng tiếng ồn, âm nhạc hoặc spam.
+                    ✗ Tuyệt đối không sử dụng ngôn ngữ thù hằn hoặc lăng mạ. Chúng tôi không dung thứ các bình luận mang
+                    chủ ý xúc phạm về giới tính, chủng tộc, khuynh hướng tình dục, tuổi tác, khiếm khuyết về tinh thần
+                    hoặc thể chất, tín ngưỡng tôn giáo hoặc nguồn gốc xuất xứ của bất cứ người chơi nào.<br />
+                    ✗ Đừng bày trò đùa cợt về người khác. Con người không phải là thứ để đem ra làm trò cười.<br />
+                    ✗ Mọi hình thức đe dọa đều bị nghiêm cấm trong VALORANT. Ý định thật sự của bạn là gì không quan
+                    trọng. Nếu người khác cảm thấy bị xúc phạm, lỗi sẽ hoàn toàn thuộc về bạn cho dù bạn có nghĩ rắng đó
+                    “chỉ là một trò đùa”.<br />
+                    ✗ Đừng nghĩ rằng người khác phải “cứng rắn lên” và chấp nhận lời nói của bạn. Nếu bạn làm phật lòng
+                    người khác, hãy nhận lỗi và rút kinh nghiệm lần sau. Hãy tôn trọng ranh giới của tất cả mọi
+                    người.<br />✗ Tránh làm rối các kênh giao tiếp bằng tiếng ồn, âm nhạc hoặc spam.
                 </p>
                 <p></p>
                 <h2>
                     <strong>BẢO VỆ ĐỒNG ĐỘI VÀ CỘNG ĐỒNG</strong>
                 </h2>
                 <p class="margin">
-                    <strong>Hãy xây dựng một cộng đồng tích cực mà bạn mong muốn tham gia, qua từng trận đấu. Sử dụng các công cụ và đưa ra nhận định đúng đắn để bảo vệ bản thân và những người chơi cùng, đồng thời hỗ trợ người khác khi họ cần sự giúp đỡ của bạn.</strong>
+                    <strong>Hãy xây dựng một cộng đồng tích cực mà bạn mong muốn tham gia, qua từng trận đấu. Sử dụng
+                        các công cụ và đưa ra nhận định đúng đắn để bảo vệ bản thân và những người chơi cùng, đồng thời
+                        hỗ trợ người khác khi họ cần sự giúp đỡ của bạn.</strong>
                 </p>
                 <p>Ví dụ, chúng tôi yêu cầu và khuyến khích bạn:</p>
                 <p>
-                    ✓ Sử dụng các cài đặt và tủy chỉnh hệ thống để quản lý trải nghiệm chơi của bạn. Không tham gia các kênh giao tiếp mà bạn không muốn sử dụng. Bật bộ lọc ngôn ngữ, dùng chế độ tắt tiếng và báo cáo hành vi không đúng mực.<br/>
-                    ✓ Nếu đồng đội của bạn bị quấy rối, hãy lên tiếng ngay nếu có thể. Hãy thận trọng, đừng làm cho tình hình trở nên tồi tệ hơn, nhưng đôi khi một chút hỗ trợ có thể có ý nghĩa rất lớn với đồng đội của bạn.<br/>✓ Hãy giúp cho trò chơi không còn hành vi gian lận hoặc tận dụng lỗ hổng. Nếu bạn phát hiện ra bất cứ trường hợp nào, hãy tố cáo ngay để chúng tôi có thể xử lý.
+                    ✓ Sử dụng các cài đặt và tủy chỉnh hệ thống để quản lý trải nghiệm chơi của bạn. Không tham gia các
+                    kênh giao tiếp mà bạn không muốn sử dụng. Bật bộ lọc ngôn ngữ, dùng chế độ tắt tiếng và báo cáo hành
+                    vi không đúng mực.<br />
+                    ✓ Nếu đồng đội của bạn bị quấy rối, hãy lên tiếng ngay nếu có thể. Hãy thận trọng, đừng làm cho tình
+                    hình trở nên tồi tệ hơn, nhưng đôi khi một chút hỗ trợ có thể có ý nghĩa rất lớn với đồng đội của
+                    bạn.<br />✓ Hãy giúp cho trò chơi không còn hành vi gian lận hoặc tận dụng lỗ hổng. Nếu bạn phát
+                    hiện ra bất cứ trường hợp nào, hãy tố cáo ngay để chúng tôi có thể xử lý.
                 </p>
                 <p>
-                    ✗ Đừng kêu gọi tố cáo hàng loạt hoặc lôi kéo đồng đội vào một cuộc tranh cãi. Chỉ một bản tố cáo là đủ để chúng tôi biết có chuyện gì đã xảy ra.<br/>✗ Đừng vì hành vi của người khác mà tự hạ thấp bản thân. Nếu một người chơi có hành vi quấy rối bạn, thông thường giải pháp tốt nhất sẽ là mặc kệ thay vì “bật lại”. Sẽ chẳng có cuộc cãi vã nào nếu chỉ có một kẻ lắm mồm.
+                    ✗ Đừng kêu gọi tố cáo hàng loạt hoặc lôi kéo đồng đội vào một cuộc tranh cãi. Chỉ một bản tố cáo là
+                    đủ để chúng tôi biết có chuyện gì đã xảy ra.<br />✗ Đừng vì hành vi của người khác mà tự hạ thấp bản
+                    thân. Nếu một người chơi có hành vi quấy rối bạn, thông thường giải pháp tốt nhất sẽ là mặc kệ thay
+                    vì “bật lại”. Sẽ chẳng có cuộc cãi vã nào nếu chỉ có một kẻ lắm mồm.
                 </p>
                 <p></p>
                 <h2>
                     <strong>HÃY LÀ CHỐT CHẶN CUỐI CÙNG ĐỂ BẢO VỆ BẢN THÂN</strong>
                 </h2>
                 <p class="margin">
-                    <strong>Hãy giúp Riot giữ an toàn cho bạn. Hãy có trách nhiệm với tài khoản, thiết bị, thông tin cá nhân và hành vi ứng xử của bạn.</strong>
+                    <strong>Hãy giúp Riot giữ an toàn cho bạn. Hãy có trách nhiệm với tài khoản, thiết bị, thông tin cá
+                        nhân và hành vi ứng xử của bạn.</strong>
                 </p>
                 <p>Ví dụ, chúng tôi yêu cầu và khuyến khích bạn:</p>
                 <p>
-                    ✓ Sử dụng mật khẩu mạnh và luôn bảo mật tốt mọi thiết bị của bạn. Bạn có thể đọc thêm thông tin [ở đây]<br/>
-                    ✓ Hãy cho chúng tôi biết càng sớm càng tốt nếu bạn nghĩ rằng tài khoản của mình đã bị hack. [liên kết]<br/>
-                    ✓ Mỗi tài khoản chỉ được phép có tối đa 1 người dùng. Bạn cần bảo mật tài khoản của mình và không để bất cứ người nào khác sử dụng. Nếu bạn muốn lên hạng, hãy chơi cùng bạn bè. Đừng nhờ bạn bè chơi hộ.<br/>✓ Hãy chơi game một cách có trách nhiệm. Hãy tự chăm sóc bản thân thật tốt để bạn có thể thi đấu hết sức mình trong mọi cuộc đối đầu.
+                    ✓ Sử dụng mật khẩu mạnh và luôn bảo mật tốt mọi thiết bị của bạn. Bạn có thể đọc thêm thông tin [ở
+                    đây]<br />
+                    ✓ Hãy cho chúng tôi biết càng sớm càng tốt nếu bạn nghĩ rằng tài khoản của mình đã bị hack. [liên
+                    kết]<br />
+                    ✓ Mỗi tài khoản chỉ được phép có tối đa 1 người dùng. Bạn cần bảo mật tài khoản của mình và không để
+                    bất cứ người nào khác sử dụng. Nếu bạn muốn lên hạng, hãy chơi cùng bạn bè. Đừng nhờ bạn bè chơi
+                    hộ.<br />✓ Hãy chơi game một cách có trách nhiệm. Hãy tự chăm sóc bản thân thật tốt để bạn có thể
+                    thi đấu hết sức mình trong mọi cuộc đối đầu.
                 </p>
                 <p>
-                    ✗ Tuyệt đối không sử dụng các chương trình bên thứ ba để can thiệp vào trò chơi. Bạn cần thật thận trọng và đưa ra nhận định đúng đắn.<br/>
-                    ✗ Đừng chia sẻ thông tin cá nhân với người lạ. Thêm nữa, đừng chia sẻ thông tin của bất kỳ ai khác. Chúng tôi có chính sách không khoan nhượng đối với việc phát tán thông tin cá nhân của người khác trên nền tảng trò chơi.<br/>
-                    ✗ Đừng mạo danh bất cứ ai. Cụ thể, đừng mạo danh nhân viên Riot hoặc những người chơi nổi tiếng.<br/>✗ Đừng tham gia hàng chờ nếu bạn biết rõ mình đang bị &quot;tiu &quot;. Hãy nghỉ ngơi và giải tỏa khi cảm thấy ức chế.
+                    ✗ Tuyệt đối không sử dụng các chương trình bên thứ ba để can thiệp vào trò chơi. Bạn cần thật thận
+                    trọng và đưa ra nhận định đúng đắn.<br />
+                    ✗ Đừng chia sẻ thông tin cá nhân với người lạ. Thêm nữa, đừng chia sẻ thông tin của bất kỳ ai khác.
+                    Chúng tôi có chính sách không khoan nhượng đối với việc phát tán thông tin cá nhân của người khác
+                    trên nền tảng trò chơi.<br />
+                    ✗ Đừng mạo danh bất cứ ai. Cụ thể, đừng mạo danh nhân viên Riot hoặc những người chơi nổi
+                    tiếng.<br />✗ Đừng tham gia hàng chờ nếu bạn biết rõ mình đang bị &quot;tiu &quot;. Hãy nghỉ ngơi và
+                    giải tỏa khi cảm thấy ức chế.
                 </p>
                 <p></p>
                 <h1>
                     <strong>Hậu Quả</strong>
                 </h1>
-                <p>Nếu bạn vi phạm các yêu cầu được mô tả ở đây, chúng tôi có thể sẽ hạn chế các đặc quyền hoặc quyền truy cập của bạn vào các tính năng trong trò chơi. Các hạn chế này nhằm bảo vệ cộng đồng khỏi hành vi gây rối có thể xảy ra và cho người chơi cơ hội để tự suy ngẫm về hành vi đã dẫn tới hậu quả này. Chúng tôi sẽ cố gắng đưa ra hướng giải quyết các hạn chế, tuy nhiên ưu tiên số một của chúng tôi sẽ là bảo vệ phần còn lại của cộng đồng. Chúng tôi cũng sẽ cố gắng đưa ra hạn chế dựa trên hành vi gây rối cụ thể để tránh việc trừng phạt không cần thiết hoặc quá hà khắc.</p>
+                <p>Nếu bạn vi phạm các yêu cầu được mô tả ở đây, chúng tôi có thể sẽ hạn chế các đặc quyền hoặc quyền
+                    truy cập của bạn vào các tính năng trong trò chơi. Các hạn chế này nhằm bảo vệ cộng đồng khỏi hành
+                    vi gây rối có thể xảy ra và cho người chơi cơ hội để tự suy ngẫm về hành vi đã dẫn tới hậu quả này.
+                    Chúng tôi sẽ cố gắng đưa ra hướng giải quyết các hạn chế, tuy nhiên ưu tiên số một của chúng tôi sẽ
+                    là bảo vệ phần còn lại của cộng đồng. Chúng tôi cũng sẽ cố gắng đưa ra hạn chế dựa trên hành vi gây
+                    rối cụ thể để tránh việc trừng phạt không cần thiết hoặc quá hà khắc.</p>
                 <p>Hạn chế do vi phạm các yêu cầu nêu trên có thể bao gồm (nhưng không giới hạn trong):</p>
                 <ul>
                     <li>./ Mất khả năng sử dụng các hệ thống giao tiếp trong trò chơi.</li>
-                    <li>./ Hạn chế hoặc có thêm các điều kiện bổ sung để truy cập những trải nghiệm như hàng chờ Đấu xếp hạng.</li>
-                    <li>./ Hạn chế quyền truy cập vào các hệ thống và tính năng xã hội trong bất kỳ trò chơi nào của Riot.</li>
+                    <li>./ Hạn chế hoặc có thêm các điều kiện bổ sung để truy cập những trải nghiệm như hàng chờ Đấu xếp
+                        hạng.</li>
+                    <li>./ Hạn chế quyền truy cập vào các hệ thống và tính năng xã hội trong bất kỳ trò chơi nào của
+                        Riot.</li>
                     <li>./ Loại bỏ nội dung thu thập được bằng phương pháp không được cho phép.</li>
                     <li>./ Đình chỉ tạm thời / vô thời hạn trong VALORANT hoặc tất cả các trò chơi của Riot.</li>
-                </ul> 
-                <div class="margin"><a class="change" href="#">⬸ Tới danh sách bài viết</a> </div>             
+                </ul>
+                <div class="margin"><a class="change" href="#">⬸ Tới danh sách bài viết</a> </div>
             </div>
         </div>
     </content>
@@ -155,7 +253,8 @@
             <div><img clas="ha2" src="../images/ha2.png"></div>
         </div>
         <div class="line1">© 2023 Riot Games, Inc.</div>
-        <div class="line2">Công Ty Cổ Phần VNG. Địa chỉ: Lô 03b-04-05-06-07, đường số 13, khu Công Nghiệp, Khu Chế Xuất Tân<br> Thuận, phường Tân Thuận Đông, Quận 7, TP.HCM.</div>
+        <div class="line2">Công Ty Cổ Phần VNG. Địa chỉ: Lô 03b-04-05-06-07, đường số 13, khu Công Nghiệp, Khu Chế Xuất
+            Tân<br> Thuận, phường Tân Thuận Đông, Quận 7, TP.HCM.</div>
         <ul class="horizontal-list">
             <li><a href="https://www.riotgames.com/en/privacy-notice">Chính Sách Bảo Mật</a></li>
             <li><a href="https://www.riotgames.com/en/terms-of-service">Điều Khoản Sử Dụng (Riot)</a></li>
@@ -165,7 +264,7 @@
         <img class="ha3" src="../images/ha3.png">
     </footer>
     <script>
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             var backToTopBtn = document.getElementById('back-to-top');
             if (window.pageYOffset > 200) {
                 backToTopBtn.style.display = 'block';
@@ -173,12 +272,12 @@
                 backToTopBtn.style.display = 'none';
             }
         });
-        document.getElementById('back-to-top').addEventListener('click', function(e) {
+        document.getElementById('back-to-top').addEventListener('click', function (e) {
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
-      
+
     </script>
 </body>
+
 </html>
- 
