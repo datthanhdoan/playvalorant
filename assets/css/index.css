@@ -441,6 +441,17 @@ a {
   position: relative;
 }
 
+.we-are-valorant::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-right: 7.3vw solid transparent;
+  border-bottom: 3.5rem solid #ff4655;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
 .we-are-valorant {
   position: relative;
   background-color: #ece8e1;
