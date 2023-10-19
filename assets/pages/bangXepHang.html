@@ -13,7 +13,7 @@
         $(function () {
             $("#header").load("header.html", function () {
                 // Sau khi header.html được load, tải tệp CSS của header
-                $.get("assets/css/header.css", function (data) {
+                $.get("../assets/css/header.css", function (data) {
                     $("<style>").text(data).appendTo("head");
                 });
             });
@@ -23,7 +23,6 @@
 
 <body>
     <header id="header"></header>
-
     <main>
         <div class="bxh-image">
             <div class="background-wrapper">

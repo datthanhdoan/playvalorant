@@ -67,19 +67,19 @@ a{
     background-color: #ece8e1;
     padding: 0px 7% 100px;
 }
-.search{
+.container .search{
     font-family: Roboto;
     font-size: 18px;
     line-height: 25.2px;
     padding: 50px 0px;
     text-align: center;
 }
-.search form{
+.container .search form{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.search input{
+.container .search input{
     background-color: #ded9d0;
     width: 400px;
     height: 60px;
@@ -88,11 +88,11 @@ a{
     padding: 0px 60px 0px 10px;
     margin-left: 10px;
 }
-.search input:hover{
+.container .search input:hover{
     border:1px solid black;
 
 }
-.search svg{
+.container .search svg{
     position: relative;
     right: 45px;
     top: 8px;
@@ -498,13 +498,13 @@ footer .logo svg:hover{
     }
 }
 @media screen and (max-width: 772px){
-    .search{
+    .container .search{
         text-align: left;
     }
-    .search form{
+    .container .search form{
         flex-direction: column;
     }
-    .search input{
+    .container .search input{
         margin-left: 0px;
     }
     footer .logo{
@@ -516,5 +516,10 @@ footer .logo svg:hover{
     }
     footer .logo > *:last-child{
         margin-bottom: 0px;
+    }
+}
+@media (min-width: 1024px){
+    body .search-and-play .playnow{
+        height : 34px;
     }
 }

@@ -4,14 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" type="image/x-icon" href="../images/val-favicon.ico" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="../css/taiTroChoi.css">
     <link rel="stylesheet" href="../css/bangXepHang.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VALORANT: tựa game bắn súng chiến thuật 5 đấu 5 lấy các nhân vật làm nền tảng từ Riot Games</title>
+    <script>
+        $(function () {
+            $("#header").load("header.html", function () {
+                // Sau khi header.html được load, tải tệp CSS của header
+                $.get("../assets/css/header.css", function (data) {
+                    $("<style>").text(data).appendTo("head");
+                });
+            });
+        });
+    </script>
 </head>
 
 <body>
-    <header></header>
+    <header id="header"></header>
     <main>
         <div class="main-borders"></div>
         <div class="video-container">
