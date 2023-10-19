@@ -2,6 +2,11 @@
   font-family: Anton;
   src: url(../fonts/Anton-Regular.ttf);
 }
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
 *,
 *::after,
 *::before {
@@ -99,6 +104,7 @@ main:after {
   color: #ece8e1;
   font-family: Anton;
   font-size: 2rem;
+  margin-bottom: 100px;
 }
 .content .download {
   margin-top: 60px;
@@ -125,6 +131,7 @@ main:after {
   .content h2 {
     font-size: 4.5rem;
     margin-top: 1rem;
+    margin-bottom: 10px;
   }
   .content .content-position {
     padding: 0.13em 0;
@@ -135,16 +142,25 @@ main:after {
   }
 }
 .transition-button .button {
-  width: 288px;
-  height: 74px;
-  position: absolute;
+  width: 218px;
+  height: 69px;
+  position: relative;;
   bottom: 5px;
   box-sizing: border-box;
+}
+@media (max-width: 768px){
+  .transition-button{
+    width: 100%;
+  }
+  .transition-button .button{
+    width: 100%;
+  }
 }
 .transition-button .button::before {
   content: "";
   display: block;
   height: 32px;
+  top: -7px;
   position: absolute;
   width: 100%;
   border: 1px solid hsla(38, 22%, 90%, 0.5);
@@ -154,23 +170,27 @@ main:after {
   content: "";
   display: block;
   height: 32px;
-  bottom: 0px;
+  bottom: 7px;
   position: absolute;
   width: 100%;
   border: 1px solid hsla(38, 22%, 90%, 0.5);
   border-top: 0;
 }
-
 .transition-button .button .primary-button {
   margin: 7px auto;
-  width: 274px;
-  height: 60px;
+  width: 204px;
+  height: 55px;
   position: relative;
   color: #ece8e1;
+  font-family: Roboto;
   overflow: hidden;
   box-sizing: border-box;
 }
-
+@media (max-width:768px){
+  .transition-button .button .primary-button{
+    width: calc(100% - 14px);
+  }
+}
 .transition-button .button .primary-button::before {
   content: "";
   display: block;
@@ -193,7 +213,7 @@ main:after {
 }
 
 .transition-button .button .primary-button .hover-mask-button {
-  background-color: #0f1923;
+  background-color: #ece8e1;
   height: 100%;
   position: absolute;
   top: 0;
@@ -216,7 +236,9 @@ main:after {
   background-color: transparent;
   cursor: pointer;
 }
-
+.transition-button .button:hover .primary-button .hover-text-button{
+  color: #0f1923;
+}
 .transition-button .button .primary-button .hover-text-button::after {
   content: "";
   display: block;

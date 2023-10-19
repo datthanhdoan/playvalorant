@@ -4,18 +4,19 @@ $(document).ready(function(){
     window.addEventListener('scroll', function() {
         move.style.transform = 'translateY(' + window.pageYOffset/4 + 'px)';
       });
+});
 
     // Fly in title
     
 
     // Select rank and season
     let onclickedRank, onclickedSeason, onmouseRank, onmouseSeason = false;
-    const rankSvg = document.querySelector('.rankSelect-svg');
-    const seasonSvg = document.querySelector('.seasonSelect-svg');
-    const rankSelect = document.querySelector('.rankSelect');
-    const seasonSelect = document.querySelector('.seasonSelect');
-    const rankSelectMenu = document.querySelector('.rankSelect .selectMenu');
-    const seasonSelectMenu = document.querySelector('.seasonSelect .selectMenu');
+    const rankSvg           = document.querySelector('.rankSelect-svg');
+    const seasonSvg         = document.querySelector('.seasonSelect-svg');
+    // const rankSelect        = document.querySelector('.rankSelect');
+    // const seasonSelect      = document.querySelector('.seasonSelect');
+    const rankSelectMenu    = document.querySelector('.rankSelect .selectMenu');
+    const seasonSelectMenu  = document.querySelector('.seasonSelect .selectMenu');
 
     window.onclick = () => {
         if (!onclickedRank && onmouseRank) {
@@ -25,7 +26,7 @@ $(document).ready(function(){
         } else if(onclickedRank) {
             rankSvg.style.transform = 'rotate(180deg)';
             rankSelectMenu.style.display = 'none';
-            onclickedRank = false; 
+            onclickedRank = false;
         }
         if (!onclickedSeason && onmouseSeason) {
             seasonSvg.style.transform = 'rotate(0deg)';
@@ -69,6 +70,7 @@ $(document).ready(function(){
             backwardBlur();
         } else {
             page.innerHTML = 1;
+            backwardBlur();
         }
     }
 
@@ -87,4 +89,3 @@ $(document).ready(function(){
             previousMax.classList.remove('hoverRed');
         }
     }
-});

@@ -211,6 +211,9 @@ footer{
     padding-right: 15px;
     font-weight: bold;
 }
+.language::-webkit-scrollbar {
+    display: none;
+}
 .termsline{ 
     color:#ADADAD;
     font-size: 9px;
