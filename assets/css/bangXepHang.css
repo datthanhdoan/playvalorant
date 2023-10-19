@@ -130,6 +130,18 @@ a{
     align-items: center;
     text-align: center;
 }
+@media (max-width: 1024px){
+    .col1{
+        width: 70px;
+    }
+    .col3{
+        width: 100px;
+    }
+    body .tableContent .rankOne svg{
+        position: absolute;
+        right: 10px;
+    }
+}
 .rankBadge > div{
     background-image: url(../images/radiant-badge.png);
     background-size: contain;
@@ -191,6 +203,11 @@ a{
     top: 50%;
     transform: rotate(180deg);
 }
+@media (max-width:1024px){
+    .leaderboardFilterWrapper .seasonSelect-svg{
+        right: 10px;
+    }
+}
 .seasonSelect{
     cursor: pointer;
     padding-right: 35px;
@@ -234,6 +251,23 @@ a{
     font-size: 12px;
     color: #768079;
     padding: 30px 0px 10px;
+}
+@media (max-width: 1024px){
+    .rankSelect .text span{
+        font-size: 10px;
+    }
+    .rankSelect .text h2{
+        font-size: 1.6rem;
+    }
+    .seasonSelect .text span{
+        font-size: 10px;
+    }
+    .seasonSelect .text h2{
+        font-size: 1.6rem;
+    }
+}
+@media (max-width: 768px){
+
 }
 .tableHead > div{
     height: 18px;
@@ -292,6 +326,11 @@ a{
     text-align: left;
     padding-left: 8%;
 }
+@media (max-width: 768px){
+    .tableContent .name{
+        font-size: 13px;
+    }  
+}
 .tableContent .name span{
     color: #888888;
 }
@@ -302,6 +341,11 @@ a{
 .tableContent .present span{
     margin-left: 4px;
     color: #888888;
+}
+@media (max-width:768px){
+    .tableContent .present {
+        font-size: 9px;
+    }
 }
 .tableContent .rankOne{
     height: 130px;
@@ -317,6 +361,40 @@ a{
 }
 .tableContent .rankOne .name{
     font-size: 32px;
+}
+@media (max-width: 768px){
+    .tableContent .rankOne{
+        height: inherit;
+    }
+    .tableContent .rankOne .col1{
+        font-size: inherit;
+    }
+    .tableContent .rankOne .point{
+        font-size: inherit;
+    }
+    .tableContent .rankOne .point img{
+        height: inherit;
+    }
+    .tableContent .rankOne .name{
+        font-size: inherit;
+    }
+}
+@media (max-width: 768px){
+    .tableContent > li .col1{
+        font-size: 22px;
+    }
+    .tableContent .point{
+        width: 60px;
+        font-size: 10px;
+        font-weight: 700;
+    }
+    .tableContent .point img{
+        height: 25px;
+    }
+    .tableContent .name{
+        font-size: 11px;
+        font-weight: 700;
+    }
 }
 .tableContent .rankOne svg{
     position: absolute;
