@@ -38,8 +38,10 @@ a {
   font-weight: bold;
   color: #f9f9f9;
   font-size: 14px;
+  text-transform: uppercase;
   padding: 8px 16px;
   border-radius: 6.4px;
+  letter-spacing: 1px;
 }
 .download a:hover {
   background: rgba(128, 128, 128, 0.3);
