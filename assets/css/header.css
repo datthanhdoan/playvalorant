@@ -1,20 +1,14 @@
 @font-face {
   font-family: Nueu;
   src: url(../fonts/Nueu.woff2);
-}
-
-@font-face {
   font-family: FFMark-Bold;
   src: url(../fonts/FFMarkW05-Bold.woff2);
-}
-@font-face {
   font-family: FFMark-Heavy;
   src: url(../fonts/FFMarkW05-Heavy.woff2);
-}
-@font-face {
   font-family: FFMark-Medium;
   src: url(../fonts/FFMarkW05-Medium.woff2);
 }
+
 * {
   padding: 0;
   margin: 0;
