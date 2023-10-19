@@ -560,21 +560,10 @@
         </div>
     </div>
 
-    <!-- <div class="transition-button">
-
-        <div class="button popup-playnow">
-            <div class="primary-button">
-                <div class="hover-mask-button"></div>
-                <div class="hover-text-button">Chơi miễn phí</div>
-            </div>
-        </div>
-    </div> -->
-
     <script>
         var screenW;
         $(document).ready(function () {
             // show riot menu (desktop)
-            var isRotated = false;
             screenW = $(window).width();
             const menuRiot = $(".menu-riot");
             console.log("Chiều ngang của trình duyệt: " + screenW);
@@ -587,8 +576,7 @@
             $(".items").click(function () {
                 var arrowIcon = $(this).find('.arrow-down');
                 $(this).next(".subnav-menu").toggle();
-                isRotated = !isRotated;
-                arrowIcon.css('transform', isRotated ? 'rotate(180deg)' : 'rotate(0deg)');
+                arrowIcon.css('transform', $(this).find(".sub-nav").is(":hidden") ? 'rotate(180deg)' : 'rotate(0deg)');
                 if ($(this).find(".sub-nav").is(":hidden")) {
                     $(this).find(".main-nav").css("backgroundColor", "rgb(31, 31, 31)");
                     $(this).find(".main-nav").css("color", "#F3F3F3");
@@ -656,8 +644,8 @@
             toggleSubnav.click(function () {
                 var arrowIcon = $(this).find('.arrow-down');
                 $(this).next(".subnav-menu").toggle();
-                isRotated = !isRotated;
-                arrowIcon.css('transform', isRotated ? 'rotate(270deg)' : 'rotate(90deg)');
+                // isRotated = !isRotated;
+                arrowIcon.css('transform', $(this).next(".subnav-menu").is(":hidden") ? 'rotate(90deg)' : 'rotate(270deg)');
             });                // execute mobile function
 
             // popup play
