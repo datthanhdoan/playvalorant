@@ -198,6 +198,79 @@
                 </div>
             </div>
         </div>
+        <div class="agents">
+            <div class="background">
+                <img src="/assets/images/background-agents.png" alt="">
+            </div>
+            <div class="box">
+                <div class="button">
+                    <div class="transition-button">
+                        <div class="button popup-playnow">
+                            <div class="primary-button">
+                                <div class="hover-mask-button"></div>
+                                <div class="hover-text-button">KHÁM PHÁ CÁC ĐẶC VỤ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reyna-and-raze">
+                    <div class="image">
+                        <img src="/assets/images/reyna-and-raze.png" alt="">
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="title">
+                        <p>ĐẶC VỤ CỦA BẠN</p>
+                    </div>
+                    <div class="sub-title">
+                        <p>SÁNG TẠO LÀ VŨ KHÍ TỐI THƯỢNG CỦA BẠN</p>
+                    </div>
+                    <div class="description">
+                        <p>Ngoài việc trang bị súng đạn, hãy chọn cho riêng mình một Đặc Vụ có kỹ năng phù hợp với lối
+                            chơi của bạn để giúp bạn tỏa sáng trong nhẫn màn đấu súng khốc liệt tại VALORANT.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="map">
+            <div class="background-coo"></div>
+            <div class="background">
+                <img src="/assets/images/maps-house.png" alt="">
+            </div>
+            <div class="background-bird">
+                <img src="/assets/images/maps-birds.png" alt="">
+            </div>
+            <div class="title">
+                <div class="big-title">
+                    <p>BẢN ĐỒ CỦA BẠN</p>
+                </div>
+                <div class="sub-title">
+                    <p>CHIẾN ĐẤU KHẮP THẾ GIỚI</p>
+                </div>
+                <div class="description">
+                    <p>Mỗi bản đồ đều là một sân chơi để bạn thỏa sức thể hiện tư duy sáng tạo của
+                        mình. Được xây dựng với mục đích phát triển chiến lược đội nhóm, các bản đồ VALORANT hứa hẹn
+                        mang
+                        đến cho người chơi những trận giao tranh ngoạn ngục cùng với muôn vàn khoảnh khắc xuất thần. Hãy
+                        là
+                        nguồn cảm hứng cho tất cả người chơi VALORANT và tạo ra cho mình lối chơi độc nhất vô nhị.
+                    </p>
+                </div>
+            </div>
+            <div class="button">
+                <div class="transition-button">
+                    <div class="button popup-playnow">
+                        <div class="primary-button">
+                            <div class="hover-mask-button"></div>
+                            <div class="hover-text-button">
+                                <p>KHÁM PHÁ CÁC BẢN ĐỒ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div id="footer"></div>
     <script>
@@ -205,11 +278,19 @@
             $(window).scroll(function () {
                 var scrollPosition = $(this).scrollTop();
                 $('.main-news .background').css({
-                    top: scrollPosition * 0.3 + 'px' // Điều chỉnh tốc độ parallax ở đây
+                    top: scrollPosition * 0.3 + 'px' // Điều chỉnh tốc độ parallax cho phần tử cha
                 });
 
-            })
+                var agentsTop = $(".agents").offset().top; // agent position
+                var windowTop = $(window).scrollTop(); // window position
+                var reynaRazeParallax = (agentsTop - windowTop) * 0.2;
+
+                $('.agents .reyna-and-raze').css({
+                    top: reynaRazeParallax + 'px' // Điều chỉnh tốc độ parallax cho .reyna-and-raze
+                });
+            });
         });
+
     </script>
 </body>
 
