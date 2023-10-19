@@ -749,7 +749,8 @@ a {
   .search-and-play .playnow {
     font-size: 13px;
     display: block;
-    height: 18px;
+    height: 16px;
+    text-transform: uppercase;
     cursor: pointer;
     padding: 8px 16px;
     background: linear-gradient(
@@ -768,13 +769,14 @@ a {
     width: 32px;
     height: 32px;
     margin: 0;
+    margin-right: 5px;
   }
   .search-and-play .language svg {
     width: 16px;
     height: 16px;
   }
-  .header .riot-logo {
-  }
+  /* .header .riot-logo {
+  } */
   .header .riot-logo .riot {
     width: 80px;
   }
