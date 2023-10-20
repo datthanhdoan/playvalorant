@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/val-favicon.ico" />
+    <title>Tin tức VALORANT: Thông tin cập nhật, video và các bản cập nhật mới nhất
+    </title>
+    <script type="text/javascript" src="/assets/jquery/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="/assets/jquery/code.jquery.com_jquery-migrate-1.2.1.js"></script>
+    <!-- <script type="text/javascript" src="/assets/jquery/slick/slick.min.js"></script> -->
+    <!-- <link rel="stylesheet" type="text/css" href="/assets/jquery/slick/slick-theme.css"> -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/news.css">
+    <script>
+        $(function () {
+            $("#header").load("/assets/pages/header.html", function () {
+                // Sau khi header.html được load, tải tệp CSS của header
+                $.get("assets/css/header.css", function (data) {
+                    $("<style>").text(data).appendTo("head");
+                });
+            });
+            $("#footer").load("/assets/pages/footer.html", function () {
+                // Sau khi footer.html được load, tải tệp CSS của footer
+                $.get("assets/css/footer.css", function (data) {
+                    $("<style>").text(data).appendTo("head");
+                });
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+    <div class="big-news">
+        <div class="overlay">
+            <p>WE ARE</p>
+            <p>VALORANT</p>
+        </div>
+        <a href="#" class="scroll-showmore">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path d="m6.3 3 3.6 3.5m4.5 3.5-8.2 7" fill="none" stroke="#ece8e1" pathLength="1"></path>
+                </svg>
+                <span></span>
+            </div>
+            <span>Cuộn xuống</span>
+            <span>Để xem thêm</span>
+
+        </a>
+        <div class="title">
+            <p>Tin nổi bật</p>
+        </div>
+        <div class="box">
+            <div class="slide-show">
+                <a href="#" class="items">
+                    <div class="image">
+                        <img src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt10e8670de7a90d75/652dd7041199322142d2a018/VAL_EP7323_IsoCinematic_Redirect_Banner_1920x1080_v004.jpg?auto=webp&disable=upscale&width=1253"
+                            alt="">
+                    </div>
+                    <div class="info">
+                        <div class="number">
+                            <p>01</p>
+                        </div>
+                        <div class="info-title">
+                            <div class="date">
+                                <p>19/10/23</p>
+                            </div>
+                            <div class="content">
+                                <p>VTRUYỀN THUYẾT // Trailer Đặc Vụ Iso - VALORANT</p>
+                            </div>
+                        </div>
+                        <div class="quote">
+                            <p>asldkjalskjdakjsd</p>
+                            <p>Nơi nào có khói, là nơi đó có... Brimstone?</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="items">
+                    <div class="image">
+                        <img src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltada762b70890a4f7/652997993566048099abd8d8/EP7_Act_2_PlayerCards_1920x1080.jpg?auto=webp&disable=upscale&width=1253"
+                            alt="">
+                    </div>
+                    <div class="info">
+                        <div class="number">
+                            <p>02</p>
+                        </div>
+                        <div class="info-title">
+                            <div class="date">
+                                <p>17/10/23</p>
+                            </div>
+                            <div class="content">
+                                <p>VALORANT - Thông Tin Bản Cập Nhật 7.08</p>
+                            </div>
+                        </div>
+                        <div class="quote">
+                            <p>asldkjalskjdakjsd</p>
+                            <p>Nơi nào có khói, là nơi đó có... Brimstone?</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="items">
+                    <div class="image">
+                        <img src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt32e45b8b8e7b3e11/6515e5b314893a095dce72f5/EP7_Act2_PatchNotes_7_07_Banner.jpg?auto=webp&disable=upscale&width=1253"
+                            alt="">
+                    </div>
+                    <div class="info">
+                        <div class="number">
+                            <p>03</p>
+                        </div>
+                        <div class="info-title">
+                            <div class="date">
+                                <p>3/10/23</p>
+                            </div>
+                            <div class="content">
+                                <p>VALORANT - Thông Tin Bản Cập Nhật 7.07</p>
+                            </div>
+                        </div>
+                        <div class="quote">
+                            <p>asldkjalskjdakjsd</p>
+                            <p>Ai gọi của Heven đó , có tôi nghe</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <div class="other-news">
+        <div class="background"></div>
+        <div class="overlay">
+            <p>VALORANT</p>
+        </div>
+        <div class="title">
+            <div class="big-title">
+                <p>Tin tức</p>
+            </div>
+            <div class="sub-title">
+                <p>chúng tôi là</p>
+                <p>valorant</p>
+            </div>
+        </div>
+        <ul class="list-news">
+
+            <li class="items">
+                <a href="#">
+                    <div class="div-img"><img
+                            src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt10e8670de7a90d75/652dd7041199322142d2a018/VAL_EP7323_IsoCinematic_Redirect_Banner_1920x1080_v004.jpg?auto=webp&disable=upscale&height=909"
+                            alt=""></div>
+                    <div>
+                        <p class="date">19/10/2023</p>
+                        <p class="info">TRUYỀN THUYẾT // Trailer Đặc Vụ Iso - VALORANT</p>
+                        <p>VALORANT - THÔNG TIN BẢN CẬP NHẬT 7.08</p>
+                        <span>Xem bài viết
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 15">
+                                <path d="M16.2.5 19.9 4m4.6 3.5-8.3 7" fill="none" stroke="#ff4655"></path>
+                                <path fill="none" stroke="#ff4655" stroke-miterlimit="10" d="M16 7.5H0"></path>
+                            </svg>
+                        </span>
+                    </div>
+                </a>
+            </li>
+
+            <li class="items">
+                <a href="#">
+                    <div class="div-img"><img
+                            src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt0c361e2f99329555/650e2856474d4d27e04f265e/Valorant_Community_Spotlight_September_2023.jpg?auto=webp&disable=upscale&width=797"
+                            alt=""></div>
+                    <div>
+                        <p class="date">17/10/2023</p>
+                        <p class="info">Tiêu Điểm Cộng Đồng: 09/2023</p>
+                        <p>Chúng tôi đã quay trở lại từ Champions 2023 rồi đây. Cùng xem tháng qua các bạn đã làm những
+                            gì rồi nhé.</p>
+                        <span>Xem bài viết
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 15">
+                                <path d="M16.2.5 19.9 4m4.6 3.5-8.3 7" fill="none" stroke="#ff4655"></path>
+                                <path fill="none" stroke="#ff4655" stroke-miterlimit="10" d="M16 7.5H0"></path>
+                            </svg>
+                        </span>
+                    </div>
+                </a>
+            </li>
+            <li class="items">
+                <a href="#">
+                    <div class="div-img"><img
+                            src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt32e45b8b8e7b3e11/6515e5b314893a095dce72f5/EP7_Act2_PatchNotes_7_07_Banner.jpg?auto=webp&disable=upscale&width=797"
+                            alt=""></div>
+                    <div>
+                        <p class="date">17/10/2023</p>
+                        <p class="info">VALORANT - Thông Tin Bản Cập Nhật 7.08</p>
+                        <p>Nơi nào có khói, là nơi đó có... Brimstone?</p>
+                        <span>Xem bài viết
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 15">
+                                <path d="M16.2.5 19.9 4m4.6 3.5-8.3 7" fill="none" stroke="#ff4655"></path>
+                                <path fill="none" stroke="#ff4655" stroke-miterlimit="10" d="M16 7.5H0"></path>
+                            </svg>
+                        </span>
+                    </div>
+                </a>
+            </li>
+
+            <li class="items">
+                <a href="#">
+                    <div class="div-img"><img
+                            src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt9ca7a59c6e7e43a4/6515923d9a515242258c0a1e/EP7_Act2_Gekko_Deacklock_DE.jpg?auto=webp&disable=upscale&width=797"
+                            alt=""></div>
+                    <div>
+                        <p class="date">17/10/2023</p>
+                        <p class="info">Hiện Trạng Về Các Đặc Vụ: Gekko, Deadlock và ???</p>
+                        <p>Nhà Sáng Tạo Nhân Vật John Goscicki nói qua về các Đặc Vụ trong năm 2023 và hé lộ về Đặc Vụ
+                            tiếp theo.</p>
+                        <span>Xem bài viết
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 15">
+                                <path d="M16.2.5 19.9 4m4.6 3.5-8.3 7" fill="none" stroke="#ff4655"></path>
+                                <path fill="none" stroke="#ff4655" stroke-miterlimit="10" d="M16 7.5H0"></path>
+                            </svg>
+                        </span>
+                    </div>
+                </a>
+            </li>
+            <li class="items">
+                <a href="#">
+                    <div class="div-img"><img
+                            src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltada762b70890a4f7/652997993566048099abd8d8/EP7_Act_2_PlayerCards_1920x1080.jpg?auto=webp&disable=upscale&width=1620"
+                            alt=""></div>
+                    <div>
+                        <p class="date">17/10/2023</p>
+                        <p class="info">VALORANT - Thông Tin Bản Cập Nhật 7.08</p>
+                        <p>Nơi nào có khói, là nơi đó có... Brimstone?</p>
+                        <span>Xem bài viết
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 15">
+                                <path d="M16.2.5 19.9 4m4.6 3.5-8.3 7" fill="none" stroke="#ff4655"></path>
+                                <path fill="none" stroke="#ff4655" stroke-miterlimit="10" d="M16 7.5H0"></path>
+                            </svg>
+                        </span>
+                    </div>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+
+    <div id="footer"></div>
+
+    <script>
+        $(document).ready(function () {
+            $(".big-news .slide-show ").slick({
+                arrows: false,
+                infinite: false,
+                variableWidth: true,
+                centerMode: true,
+                dots: true,
+            });
+            $(window).scroll(function () {
+                var scrollPosition = $(this).scrollTop();
+                $('.big-news .overlay').css({
+                    top: scrollPosition * 0.3 + 'px'
+                });
+                $('.other-news .overlay').css({
+                    top: scrollPosition * 0.2 + 'px'
+                });
+            });
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>

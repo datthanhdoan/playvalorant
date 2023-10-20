@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/val-favicon.ico" />
+    <title>VALORANT: Riot Games’ competitive 5v5 character-based tactical shooter
+    </title>
+    <script type="text/javascript" src="/assets/jquery/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="/assets/jquery/code.jquery.com_jquery-migrate-1.2.1.js"></script>
+    <!-- <script type="text/javascript" src="/assets/jquery/slick/slick.min.js"></script> -->
+    <!-- <link rel="stylesheet" type="text/css" href="/assets/jquery/slick/slick-theme.css"> -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/media.css">
+    <script>
+        $(function () {
+            $("#header").load("/assets/pages/header.html", function () {
+                // Sau khi header.html được load, tải tệp CSS của header
+                $.get("assets/css/header.css", function (data) {
+                    $("<style>").text(data).appendTo("head");
+                });
+            });
+            $("#footer").load("/assets/pages/footer.html", function () {
+                // Sau khi footer.html được load, tải tệp CSS của footer
+                $.get("assets/css/footer.css", function (data) {
+                    $("<style>").text(data).appendTo("head");
+                });
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <div class="background"></div>
+    <div id="header"></div>
+    <section class="media">
+        <div class="box">
+            <div class="box-left">
+                <div class="title">
+                    <p>TRUYỀN THÔNG</p>
+                </div>
+                <div class="des">
+                    <p>
+                        Các thông tin của chúng tôi là dành cho bạn. Dù là bạn là nhà báo, người tạo nội dung hoặc cả
+                        hai,
+                        bạn hoàn toàn có thể sử dụng những thông tin được cung cấp tại đây.
+
+                    </p>
+                    <p>Nếu sản phẩm của bạn sử dụng những tài liệu này, đừng quên tag @PlayVALORANT trên mạng xã hội
+                        nhé.
+                        Chúng tôi rất mong chờ được xem những gì bạn thực hiện, và nhớ để ý đến <a href="#">Quy Định
+                            Pháp
+                            Lý</a> của chúng tôi nữa đấy.</p>
+                </div>
+                <div class="trans"></div>
+            </div>
+            <div class="box-right">
+                <img src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt6664cd110092d0a3/5ebf2bee97b46c1911ad021b/Media_Header_780x462_.jpg"
+                    alt="">
+            </div>
+        </div>
+    </section>
+    <div id="footer"></div>
+</body>
+
+</html>
