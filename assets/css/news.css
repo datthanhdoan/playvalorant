@@ -282,7 +282,10 @@ a {
 .other-news {
   position: relative;
   width: 100%;
-  padding: calc(var(--line-margin) + var(--line-margin) * 0.6);
+  box-sizing: border-box;
+  overflow: hidden;
+  --pad: calc(var(--line-margin) + var(--line-margin) * 0.6);
+  padding: var(--pad) 0 var(--pad) var(--pad);
   padding-top: 15vw;
   background: transparent;
   /* z-index: 1; */
@@ -323,7 +326,7 @@ a {
 .other-news .title {
   z-index: 2;
   display: flex;
-  width: 60%;
+  width: 80%;
   text-transform: uppercase;
   justify-content: space-between;
   border-right: 1px solid #ffffffa5;
@@ -353,7 +356,7 @@ a {
   align-items: flex-start;
   justify-content: space-between;
   border-right: 1px solid #ffffffa5;
-  width: 60%;
+  width: 80%;
 }
 
 .other-news .list-news > li {
